@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!--mockup code with line prefix-->
+    <div class="mockup-code">
+        <pre data-prefix="$"><code>npm i daisyui</code></pre>
+    </div>
+
+    <br>
+
+    <!--Multi line-->
+    <div class="mockup-code">
+        <pre data-prefix="$"><code>npm i daisyui</code></pre>
+        <pre data-prefix=">" class="text-warning"><code>installing...</code></pre>
+        <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+    </div>
+
+    <br>
+
+    <!-- Highlighted line -->
+    <div class="mockup-code">
+        <pre data-prefix="1"><code>npm i daisyui</code></pre>
+        <pre data-prefix="2"><code>installing...</code></pre>
+        <pre data-prefix="3" class="bg-warning text-warning-content"><code>Error!</code></pre>
+    </div>
+    <br>
+
+    <!--Without prefix-->
+    <div class="mockup-code">
+        <pre><code>without prefix</code></pre>
+    </div>
+    <br>
+
+    <!--With color-->
+    <div class="mockup-code bg-primary text-primary-content">
+        <pre><code>can be any color!</code></pre>
+    </div>
+
+</body>
+
+</html>

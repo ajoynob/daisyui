@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!--Pagination with an active button-->
+    <div class="join">
+        <button class="join-item btn">1</button>
+        <button class="join-item btn btn-active">2</button>
+        <button class="join-item btn">3</button>
+        <button class="join-item btn">4</button>
+    </div>
+    <br><br>
+
+
+    <!--Using radio inputs-->
+    <div class="join">
+        <input class="join-item btn btn-square" type="radio" name="options" aria-label="1" checked="checked" />
+        <input class="join-item btn btn-square" type="radio" name="options" aria-label="2" />
+        <input class="join-item btn btn-square" type="radio" name="options" aria-label="3" />
+        <input class="join-item btn btn-square" type="radio" name="options" aria-label="4" />
+    </div>
+    <br><br>
+
+
+    <!--Nex/Prev outline buttons with equal width-->
+    <div class="join grid grid-cols-2">
+        <button class="join-item btn btn-outline">Previous page</button>
+        <button class="join-item btn btn-outline">Next</button>
+    </div>
+    <br><br>
+
+
+    <!--Extra small buttons-->
+    <div class="join">
+        <button class="join-item btn">«</button>
+        <button class="join-item btn">Page 22</button>
+        <button class="join-item btn">»</button>
+    </div>
+
+</body>
+
+</html>

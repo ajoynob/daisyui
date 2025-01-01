@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card as dropdown</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="dropdown">
+        <div tabindex="0" role="button" class="btn m-1">Click</div>
+        <div tabindex="0"
+            class="dropdown-content card card-compact bg-primary text-primary-content z-[1] w-64 p-2 shadow">
+            <div class="card-body">
+                <h3 class="card-title">Card title!</h3>
+                <p>you can use any element as a dropdown.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

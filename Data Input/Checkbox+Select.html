@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox/select</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <br><br>
+    <!-- Checkbox-->
+    <input type="checkbox" checked="checked" class="checkbox" />
+    <br><br>
+
+
+    <!--With label and form-control (Accent color)-->
+    <div class="form-control">
+        <label class="cursor-pointer label">
+            <span class="label-text">Remember me</span>
+            <input type="checkbox" checked="checked" class="checkbox checkbox-accent" />
+        </label>
+    </div><br><br>
+
+    <!--Disabled-->
+    <input type="checkbox" class="checkbox" disabled /><br><br>
+
+
+    <!--Disabled and Checked-->
+    <input type="checkbox" class="checkbox" disabled checked="checked" /><br><br>
+
+
+    <!--Indeterminate-->
+    <script>
+        document.getElementById("my-checkbox").indeterminate = true
+    </script>
+    <input type="checkbox" class="checkbox" id="my-checkbox" />
+    <br><br><br><br>
+
+
+
+
+    <!--Select-->
+    <select class="select w-full max-w-xs">
+        <option disabled selected>Pick your favorite Simpson</option>
+        <option>Homer</option>
+        <option>Marge</option>
+        <option>Bart</option>
+        <option>Lisa</option>
+        <option>Maggie</option>
+    </select>
+    <br><br>
+
+
+    <!--Select with border-->
+    <select class="select select-bordered w-full max-w-xs">
+        <option disabled selected>Who shot first?</option>
+        <option>Han Solo</option>
+        <option>Greedo</option>
+    </select><br><br>
+
+
+    <!--Success color-->
+    <select class="select select-success w-full max-w-xs">
+        <option disabled selected>Pick your favorite anime</option>
+        <option>One Piece</option>
+        <option>Naruto</option>
+        <option>Death Note</option>
+        <option>Attack on Titan</option>
+        <option>Bleach</option>
+        <option>Fullmetal Alchemist</option>
+        <option>Jojo's Bizarre Adventure</option>
+    </select><br><br>
+
+
+
+    <!--Sizes-->
+    <!-- lg -->
+    <select class="select select-bordered select-lg w-full max-w-xs">
+        <option disabled selected>Large</option>
+        <option>Large Apple</option>
+        <option>Large Orange</option>
+        <option>Large Tomato</option>
+    </select>
+    <br>
+    <!-- md -->
+    <select class="select select-bordered w-full max-w-xs">
+        <option disabled selected>Normal</option>
+        <option>Normal Apple</option>
+        <option>Normal Orange</option>
+        <option>Normal Tomato</option>
+    </select>
+    <br>
+    <!-- sm -->
+    <select class="select select-bordered select-sm w-full max-w-xs">
+        <option disabled selected>Small</option>
+        <option>Small Apple</option>
+        <option>Small Orange</option>
+        <option>Small Tomato</option>
+    </select>
+    <br>
+    <!-- xs -->
+    <select class="select select-bordered select-xs w-full max-w-xs">
+        <option disabled selected>Tiny</option>
+        <option>Tiny Apple</option>
+        <option>Tiny Orange</option>
+        <option>Tiny Tomato</option>
+    </select>
+    <br><br>
+
+
+
+    <!--Disabled-->
+    <select class="select w-full max-w-xs" disabled>
+        <option>You can't touch this</option>
+    </select><br>
+
+
+</body>
+
+</html>

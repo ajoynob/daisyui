@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton + Tooltip</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!--Skeleton-->
+    <div class="skeleton h-32 w-32"></div>
+    <br>
+
+
+    <!--Skeleton - circle with content-->
+    <div class="flex w-52 flex-col gap-4">
+        <div class="flex items-center gap-4">
+            <div class="skeleton h-16 w-16 shrink-0 rounded-full"></div>
+            <div class="flex flex-col gap-4">
+                <div class="skeleton h-4 w-20"></div>
+                <div class="skeleton h-4 w-28"></div>
+            </div>
+        </div>
+        <div class="skeleton h-32 w-full"></div>
+    </div>
+    <br>
+
+
+    <!--Skeleton - rectangle with content-->
+    <div class="flex w-52 flex-col gap-4">
+        <div class="skeleton h-32 w-full"></div>
+        <div class="skeleton h-4 w-28"></div>
+        <div class="skeleton h-4 w-full"></div>
+        <div class="skeleton h-4 w-full"></div>
+    </div>
+    <br><br>
+
+
+    <!--Tooltip-->
+    <div class="tooltip" data-tip="hello">
+        <button class="btn">Hover me</button>
+    </div>
+
+
+    <!--Force open-->
+    <div class="tooltip tooltip-open" data-tip="hello">
+        <button class="btn">Force open</button>
+    </div>
+
+
+    <!--Tooltip Responsive tooltip. only show for large screen-->
+    <div class="lg:tooltip" data-tip="hello">
+        <button class="btn">Hover me</button>
+        <br>
+        
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indicator</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <br>
+    <!--Badge as indicator-->
+
+    <div class="indicator">
+        <span class="indicator-item badge badge-primary">new</span>
+        <div class="bg-base-300 grid h-32 w-32 place-items-center">content</div>
+    </div>
+    <br><br>
+
+    <!--For button-->
+
+    <div class="indicator">
+        <span class="indicator-item badge badge-secondary">99+</span>
+        <button class="btn">inbox</button>
+    </div>
+    <br><br>
+
+    <!--For tab-->
+
+    <div class="tabs tabs-lifted">
+        <a class="tab">Messages</a>
+        <a class="indicator tab tab-active">
+            Notifications
+            <span class="indicator-item badge">8</span>
+        </a>
+        <a class="tab">Requests</a>
+    </div>
+    <br><br>
+
+    <!--For avatar-->
+
+    <div class="avatar indicator">
+        <span class="indicator-item badge badge-secondary">typing…</span>
+        <div class="h-20 w-20 rounded-lg">
+            <img alt="Tailwind CSS examples"
+                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        </div>
+    </div>
+    <br><br>
+
+    <!--For an input-->
+
+    <div class="indicator">
+        <span class="indicator-item badge">Required</span>
+        <input type="text" placeholder="Your email address" class="input input-bordered" />
+    </div>
+    <br><br>
+
+    <!--A button as an indicator for a card-->
+
+    <div class="indicator">
+        <div class="indicator-item indicator-bottom">
+            <button class="btn btn-primary">Apply</button>
+        </div>
+        <div class="card border">
+            <div class="card-body">
+                <h2 class="card-title">Job Title</h2>
+                <p>Rerum reiciendis beatae tenetur excepturi</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Txtarea/Toggle</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <br><br>
+
+    <!--Textarea with border-->
+    <textarea class="textarea textarea-bordered" placeholder="Bio"></textarea>
+    <br><br>
+
+
+    <!--Error color-->
+    <textarea class="textarea textarea-error" placeholder="Bio"></textarea>
+    <br><br>
+
+
+    <!--Sizes-->
+    <textarea placeholder="Bio" class="textarea textarea-bordered textarea-xs w-full max-w-xs"></textarea><br>
+    <textarea placeholder="Bio" class="textarea textarea-bordered textarea-sm w-full max-w-xs"></textarea><br>
+    <textarea placeholder="Bio" class="textarea textarea-bordered textarea-md w-full max-w-xs"></textarea><br>
+    <textarea placeholder="Bio" class="textarea textarea-bordered textarea-lg w-full max-w-xs"></textarea><br><br>
+
+
+
+
+    <!--Toggle-->
+    <input type="checkbox" class="toggle" checked="checked" />
+    <br><br>
+
+
+
+    <!--With label and form-control-->
+    <div class="form-control"> <!--div class="form-control w-60"-->
+        <label class="label cursor-pointer">
+            <span class="label-text">Remember me</span>
+            <input type="checkbox" class="toggle" checked="checked" />
+        </label>
+    </div>
+    <br><br>
+
+
+
+    <!--Checkboxes with state colors-->
+    <input type="checkbox" class="toggle toggle-success" checked="checked" /><br>
+    <input type="checkbox" class="toggle toggle-warning" checked="checked" /><br>
+    <input type="checkbox" class="toggle toggle-info" checked="checked" /><br>
+    <input type="checkbox" class="toggle toggle-error" checked="checked" /><br><br>
+
+
+
+    <!--Disabled-->
+    <input type="checkbox" class="toggle" disabled /><br><br>
+
+
+
+    <!--Checkboxes with brand colors-->
+    <div class="flex flex-col">
+        <div class="form-control w-52">
+            <label class="label cursor-pointer">
+                <span class="label-text">Remember me</span>
+                <input type="checkbox" class="toggle toggle-primary" checked="checked" />
+            </label>
+        </div>
+        <br>
+        <div class="form-control w-52">
+            <label class="label cursor-pointer">
+                <span class="label-text">Remember me</span>
+                <input type="checkbox" class="toggle toggle-secondary" checked="checked" />
+            </label>
+        </div>
+        <br>
+        <div class="form-control w-52">
+            <label class="label cursor-pointer">
+                <span class="label-text">Remember me</span>
+                <input type="checkbox" class="toggle toggle-accent" checked="checked" />
+            </label>
+        </div>
+    </div>
+    <br>
+
+</body>
+
+</html>

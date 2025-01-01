@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!--Progress-->
+    <progress class="progress w-56" value="0" max="100"></progress><br>
+    <progress class="progress w-56" value="10" max="100"></progress><br>
+    <progress class="progress w-56" value="40" max="100"></progress><br>
+    <progress class="progress w-56" value="70" max="100"></progress><br>
+    <progress class="progress w-56" value="100" max="100"></progress>
+    <br><br>
+
+
+    <!--Secondary color-->
+    <progress class="progress progress-secondary w-56" value="0" max="100"></progress><br>
+    <progress class="progress progress-secondary w-56" value="10" max="100"></progress><br>
+    <progress class="progress progress-secondary w-56" value="40" max="100"></progress><br>
+    <progress class="progress progress-secondary w-56" value="70" max="100"></progress><br>
+    <progress class="progress progress-secondary w-56" value="100" max="100"></progress>
+    <br><br>
+
+
+
+    <!--Indeterminate (without value)-->
+    <progress class="progress w-56"></progress>
+    <br><br>
+
+
+    <!--Radial progress-->
+    <div class="radial-progress" style="--value:70;" role="progressbar">70%</div>
+    <br><br>
+
+
+    <!--Different values-->
+    <div class="radial-progress" style="--value:0;" role="progressbar">0%</div>
+    <div class="radial-progress" style="--value:20;" role="progressbar">20%</div>
+    <div class="radial-progress" style="--value:60;" role="progressbar">60%</div>
+    <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+    <div class="radial-progress" style="--value:100;" role="progressbar">100%</div>
+    <br><br>
+
+
+    <!--Custom color-->
+    <div class="radial-progress text-primary" style="--value:70;" role="progressbar">70%</div>
+    <br><br>
+
+
+    <!--With background color and border-->
+    <div class="radial-progress bg-accent text-accent-content border-accent border-4" style="--value:70;"
+        role="progressbar">
+        70%
+    </div>
+    <br><br>
+
+
+
+    <!--Custom size and custom thickness-->
+    <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 2px;" role="progressbar">
+        70%
+    </div>
+    <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 2rem;" role="progressbar">
+        70%
+    </div>
+
+
+</body>
+
+</html>
